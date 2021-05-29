@@ -3,13 +3,13 @@ import {
     TableBody,
     TableCell,
     TableCellHead,
-    TableFoot,
     TableHead,
     TableRow,
     TableRowHead,
 } from '@dhis2/ui'
 import PropTypes from 'prop-types'
 import React from 'react'
+import classes from '../styles.module.css'
 
 export default function ResourceTable({ columns, data }) {
     const rows = data.map(obj => {
@@ -26,11 +26,8 @@ export default function ResourceTable({ columns, data }) {
         })
         return row
     })
-    console.log(columns)
-    console.log(rows)
-
     return (
-        <Table>
+        <Table className={classes['resource-table']}>
             <TableHead>
                 <TableRowHead>
                     {columns.map(({ displayName }) => (
@@ -40,7 +37,7 @@ export default function ResourceTable({ columns, data }) {
                     ))}
                 </TableRowHead>
             </TableHead>
-            <TableBody>
+            <TableBody className={classes['table-body']}>
                 {rows.map((row, i) => (
                     <TableRow key={`${i}-rows`}>
                         {row.map((data, j) => (
@@ -49,7 +46,6 @@ export default function ResourceTable({ columns, data }) {
                     </TableRow>
                 ))}
             </TableBody>
-            <TableFoot />
         </Table>
     )
 }
