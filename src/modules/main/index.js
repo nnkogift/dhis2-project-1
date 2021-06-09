@@ -12,9 +12,53 @@ const resources = [
         query: {
             programs: {
                 resource: 'programs',
-                params: {
+                params: ({ page, pageSize }) => ({
                     fields: ['id', 'displayName', 'lastUpdated'],
-                },
+                    page,
+                    pageSize,
+                }),
+            },
+        },
+        columns: [
+            { displayName: 'ID', data: 'id' },
+            { displayName: 'Name', data: 'displayName' },
+            {
+                displayName: 'Last Updated',
+                data: 'lastUpdated',
+                options: { isDate: true },
+            },
+        ],
+        mutations: {
+            create: {
+                type: 'create',
+                resource: 'programs',
+                data: ({ data }) => data,
+            },
+            update: {
+                type: 'update',
+                resource: 'programs',
+                id: ({ id }) => id,
+                data: ({ data }) => data,
+            },
+            delete: {
+                type: 'delete',
+                resource: 'programs',
+                id: ({ id }) => id,
+            },
+        },
+    },
+    {
+        title: 'Indicators',
+        resource: 'indicators',
+        pathname: 'indicators',
+        query: {
+            indicators: {
+                resource: 'indicators',
+                params: ({ page, pageSize }) => ({
+                    fields: ['id', 'displayName', 'lastUpdated'],
+                    page,
+                    pageSize,
+                }),
             },
         },
         columns: [
@@ -28,15 +72,17 @@ const resources = [
         ],
     },
     {
-        title: 'Indicators',
-        resource: 'indicators',
-        pathname: 'indicators',
+        title: 'Organisation Units',
+        resource: 'organisationUnits',
+        pathname: 'organisationUnits',
         query: {
-            indicators: {
-                resource: 'indicators',
-                params: {
+            organisationUnits: {
+                resource: 'organisationUnits',
+                params: ({ page, pageSize }) => ({
                     fields: ['id', 'displayName', 'lastUpdated'],
-                },
+                    page,
+                    pageSize,
+                }),
             },
         },
         columns: [
