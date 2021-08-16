@@ -23,7 +23,7 @@
     "@dhis2/cli-style": "^8.4.0"
   },
   "dependencies": {
-    "@dhis2/app-runtime": "^2.8.0",
+    "@dhis2/app-runtime": "^2.9.1",
     "@dhis2/ui": "^6.9.0",
     "final-form": "^4.20.2",
     "prop-types": "^15.7.2",
