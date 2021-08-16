@@ -2047,21 +2047,6 @@
     parse-gitignore "^1.0.1"
     styled-jsx "<3.3.3"
 
-"@dhis2/cli-helpers-engine@^2.2.0":
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/@dhis2/cli-helpers-engine/-/cli-helpers-engine-2.3.0.tgz#040cb9b2352fa618d9648a06226347f07ad9d15b"
-  integrity sha512-i46Q5mC+vNPdImut7GcfpNf2VSg3EWlL7CFTYTfJtjGrIj77mvNkR9lTSz51ZKCQgdSgTMhpcraI0TjW7RZvWw==
-  dependencies:
-    chalk "^3.0.0"
-    cross-spawn "^7.0.3"
-    find-up "^5.0.0"
-    fs-extra "^8.0.1"
-    inquirer "^7.3.3"
-    request "^2.88.0"
-    tar "^4.4.8"
-    update-notifier "^3.0.0"
-    yargs "^13.1.0"
-
 "@dhis2/cli-helpers-engine@^3.0.0":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@dhis2/cli-helpers-engine/-/cli-helpers-engine-3.0.0.tgz#dacddea16de7e5e60280aefbee2e5661795b78b3"
@@ -2077,14 +2062,14 @@
     update-notifier "^3.0.0"
     yargs "^13.1.0"
 
-"@dhis2/cli-style@^8.4.0":
-  version "8.4.0"
-  resolved "https://registry.yarnpkg.com/@dhis2/cli-style/-/cli-style-8.4.0.tgz#c4ffad886e1afc07a3b1014800841cde9494bec5"
-  integrity sha512-fJmONb1dVTPYR5/1UhvXqLAmaCWjtnh4bHvd8x9Nb3jswTH+QosegbMTjHyi17bmIPtNRYG1GI/lRhxxoYKfTg==
+"@dhis2/cli-style@^9.2.0":
+  version "9.2.0"
+  resolved "https://registry.yarnpkg.com/@dhis2/cli-style/-/cli-style-9.2.0.tgz#0b342838207abb0189c654a4d2e71304062b6a5c"
+  integrity sha512-CbKcpvqtYy2OGpjbQP3HS8AxLHIVn6EBTeno1V9zhGGfzttNDuyghRapmY+/Cr9Ay/9b327n6zeOrAPv1AM6Tw==
   dependencies:
     "@commitlint/cli" "^11.0.0"
     "@commitlint/config-conventional" "^11.0.0"
-    "@dhis2/cli-helpers-engine" "^2.2.0"
+    "@dhis2/cli-helpers-engine" "^3.0.0"
     "@ls-lint/ls-lint" "^1.9.2"
     babel-eslint "^10.1.0"
     eslint "^7.18.0"
