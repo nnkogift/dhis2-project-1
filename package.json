@@ -28,6 +28,6 @@
     "final-form": "^4.20.2",
     "prop-types": "^15.7.2",
     "react-final-form": "^6.5.3",
-    "react-router-dom": "^5.2.0"
+    "react-router-dom": "^5.3.0"
   }
 }
